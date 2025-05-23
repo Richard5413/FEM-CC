@@ -1,0 +1,26 @@
+2024-11-12 10:36:34,760 INFO    MainThread:164664 [wandb_setup.py:_flush():79] Current SDK version is 0.18.5
+2024-11-12 10:36:34,760 INFO    MainThread:164664 [wandb_setup.py:_flush():79] Configure stats pid to 164664
+2024-11-12 10:36:34,760 INFO    MainThread:164664 [wandb_setup.py:_flush():79] Loading settings from /home/wdh/.config/wandb/settings
+2024-11-12 10:36:34,760 INFO    MainThread:164664 [wandb_setup.py:_flush():79] Loading settings from /data1/wdh/FGVC-PIM/wandb/settings
+2024-11-12 10:36:34,760 INFO    MainThread:164664 [wandb_setup.py:_flush():79] Loading settings from environment variables: {}
+2024-11-12 10:36:34,760 INFO    MainThread:164664 [wandb_setup.py:_flush():79] Applying setup settings: {'mode': None, '_disable_service': None}
+2024-11-12 10:36:34,760 INFO    MainThread:164664 [wandb_setup.py:_flush():79] Inferring run settings from compute environment: {'program_relpath': 'main.py', 'program_abspath': '/data1/wdh/FGVC-PIM/main.py', 'program': 'main.py'}
+2024-11-12 10:36:34,760 INFO    MainThread:164664 [wandb_setup.py:_flush():79] Applying login settings: {}
+2024-11-12 10:36:34,760 INFO    MainThread:164664 [wandb_init.py:_log_setup():534] Logging user logs to /data1/wdh/FGVC-PIM/wandb/run-20241112_103634-zj6a62e7/logs/debug.log
+2024-11-12 10:36:34,760 INFO    MainThread:164664 [wandb_init.py:_log_setup():535] Logging internal logs to /data1/wdh/FGVC-PIM/wandb/run-20241112_103634-zj6a62e7/logs/debug-internal.log
+2024-11-12 10:36:34,761 INFO    MainThread:164664 [wandb_init.py:init():621] calling init triggers
+2024-11-12 10:36:34,761 INFO    MainThread:164664 [wandb_init.py:init():629] wandb.init called with sweep_config: {}
+config: {'project_name': 'KEY-T2', 'exp_name': 'T3000', 'c': './configs/KEY_SwinT.yaml', 'train_root': '/data1/wdh/FGVC_DataandModel/train_sam_datainit/', 'val_root': '/data1/wdh/FGVC_DataandModel/val_sam_datainit/', 'data_size': 384, 'num_workers': 2, 'batch_size': 16, 'model_name': 'swin-t', 'optimizer': 'SGD', 'max_lr': 0.0005, 'wdecay': 0.0005, 'max_epochs': 50, 'warmup_batchs': 800, 'use_fpn': True, 'fpn_size': 1536, 'use_selection': True, 'num_classes': 19, 'num_selects': {'layer1': 2048, 'layer2': 512, 'layer3': 128, 'layer4': 32}, 'use_combiner': True, 'lambda_b': 0.5, 'lambda_s': 0.0, 'lambda_n': 5.0, 'lambda_c': 1.0, 'use_wandb': True, 'wandb_entity': '2637607099-east-china-normal-university', 'pretrained': None, 'use_amp': True, 'update_freq': 2, 'log_freq': 100, 'eval_freq': 10, 'save_dir': './records/KEY-T2/T3000/', 'device': device(type='cuda', index=2)}
+2024-11-12 10:36:34,761 INFO    MainThread:164664 [wandb_init.py:init():671] starting backend
+2024-11-12 10:36:34,761 INFO    MainThread:164664 [wandb_init.py:init():675] sending inform_init request
+2024-11-12 10:36:34,768 INFO    MainThread:164664 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-11-12 10:36:34,768 INFO    MainThread:164664 [wandb_init.py:init():688] backend started and connected
+2024-11-12 10:36:34,780 INFO    MainThread:164664 [wandb_init.py:init():783] updated telemetry
+2024-11-12 10:36:34,904 INFO    MainThread:164664 [wandb_init.py:init():816] communicating run to backend with 90.0 second timeout
+2024-11-12 10:36:35,496 INFO    MainThread:164664 [wandb_init.py:init():867] starting run threads in backend
+2024-11-12 10:36:35,665 INFO    MainThread:164664 [wandb_run.py:_console_start():2463] atexit reg
+2024-11-12 10:36:35,666 INFO    MainThread:164664 [wandb_run.py:_redirect():2311] redirect: wrap_raw
+2024-11-12 10:36:35,666 INFO    MainThread:164664 [wandb_run.py:_redirect():2376] Wrapping output streams.
+2024-11-12 10:36:35,666 INFO    MainThread:164664 [wandb_run.py:_redirect():2401] Redirects installed.
+2024-11-12 10:36:35,668 INFO    MainThread:164664 [wandb_init.py:init():911] run started, returning control to user process
+2024-11-12 11:25:55,454 WARNING MsgRouterThr:164664 [router.py:message_loop():77] message_loop has been closed

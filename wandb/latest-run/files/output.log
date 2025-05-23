@@ -1,0 +1,50 @@
+[95mStart Training 1 Epoch[0m..0%..10%..20%..30%..40%..50%..60%..70%..80%..90%....[[96msuccess[0m][[92m135.113 sceonds[0m]
+[95mStart Evaluating 1 Epoch[0m..0%..10%..20%..30%..40%..50%..60%..70%..80%..90%[95m....BEST_ACC: 12.5% (12.5%)[0m....[[96msuccess[0m][[92m66.5188 sceonds[0m]
+[95mStart Training 2 Epoch[0m..0%..10%..20%..30%..40%..50%..60%..70%..80%..90%....[[96msuccess[0m][[92m127.665 sceonds[0m]
+[95mStart Training 3 Epoch[0m..0%..10%..20%..30%..40%..50%..60%..70%..80%..90%....[[96msuccess[0m][[92m125.7125 sceonds[0m]
+[95mStart Training 4 Epoch[0m..0%..10%..20%..30%..40%..50%..60%..70%..80%..90%....[[96msuccess[0m][[92m120.8718 sceonds[0m]
+[95mStart Training 5 Epoch[0m..0%..10%..20%..30%..40%..50%..60%..70%..80%..90%....[[96msuccess[0m][[92m118.6861 sceonds[0m]
+[95mStart Training 6 Epoch[0m..0%..10%..20%..30%..40%..50%..60%..70%..80%..90%....[[96msuccess[0m][[92m120.7061 sceonds[0m]
+[95mStart Training 7 Epoch[0m..0%..10%..20%..30%..40%..50%..60%..70%..80%..90%....[[96msuccess[0m][[92m126.4198 sceonds[0m]
+[95mStart Training 8 Epoch[0m..0%..10%..20%..30%..40%..50%..60%..70%..80%..90%....[[96msuccess[0m][[92m123.0905 sceonds[0m]
+[95mStart Training 9 Epoch[0m..0%..10%..20%..30%..40%..50%..60%..70%..80%..90%....[[96msuccess[0m][[92m123.3692 sceonds[0m]
+[95mStart Training 10 Epoch[0m..0%..10%..20%..30%..40%..50%..60%..70%..80%..90%....[[96msuccess[0m][[92m127.0792 sceonds[0m]
+[95mStart Evaluating 10 Epoch[0m..0%..10%..20%..30%..40%..50%..60%..70%..80%..90%[95m....BEST_ACC: 98.684% (98.684%)[0m....[[96msuccess[0m][[92m56.229 sceonds[0m]
+[95mStart Training 11 Epoch[0m..0%..10%..20%..30%..40%..50%..60%..70%..80%..90%....[[96msuccess[0m][[92m129.4915 sceonds[0m]
+[95mStart Training 12 Epoch[0m..0%..10%..20%..30%..40%..50%..60%..70%..80%..90%....[[96msuccess[0m][[92m121.4141 sceonds[0m]
+[95mStart Training 13 Epoch[0m..0%..10%..20%..30%..40%..50%..60%..70%..80%..90%....[[96msuccess[0m][[92m125.9136 sceonds[0m]
+[95mStart Training 14 Epoch[0m..0%..10%..20%..30%..40%..50%..60%..70%..80%..90%....[[96msuccess[0m][[92m122.3303 sceonds[0m]
+[95mStart Training 15 Epoch[0m..0%..10%..20%..30%..40%..50%..60%..70%..80%..90%....[[96msuccess[0m][[92m124.8913 sceonds[0m]
+[95mStart Training 16 Epoch[0m..0%..10%..20%..30%..40%..50%..60%..70%..80%..90%....[[96msuccess[0m][[92m120.2202 sceonds[0m]
+[95mStart Training 17 Epoch[0m..0%..10%..20%..30%..40%..50%..60%..70%..80%..90%....[[96msuccess[0m][[92m120.6619 sceonds[0m]
+[95mStart Training 18 Epoch[0m..0%..10%..20%..30%..40%..50%..60%..70%..80%..90%....[[96msuccess[0m][[92m126.1489 sceonds[0m]
+[95mStart Training 19 Epoch[0m..0%..10%..20%..30%..40%..50%..60%..70%..80%..90%....[[96msuccess[0m][[92m120.2005 sceonds[0m]
+[95mStart Training 20 Epoch[0m..0%..10%..20%..30%..40%..50%..60%..70%..80%..90%....[[96msuccess[0m][[92m126.0067 sceonds[0m]
+[95mStart Evaluating 20 Epoch[0m..0%..10%..20%..30%..40%..50%..60%..70%..80%..90%[95m....BEST_ACC: 100.0% (100.0%)[0m....[[96msuccess[0m][[92m55.5068 sceonds[0m]
+[95mStart Training 21 Epoch[0m
+Traceback (most recent call last):
+  File "main.py", line 297, in <module>
+    main(args, tlogger)
+  File "main.py", line 249, in main
+    train(args, epoch, model, scaler, amp_context, optimizer, schedule, train_loader)
+  File "main.py", line 110, in train
+    for batch_id, (ids, datas, labels) in enumerate(train_loader):
+  File "/home/wdh/anaconda3/envs/yolov5/lib/python3.7/site-packages/torch/utils/data/dataloader.py", line 681, in __next__
+    data = self._next_data()
+  File "/home/wdh/anaconda3/envs/yolov5/lib/python3.7/site-packages/torch/utils/data/dataloader.py", line 1359, in _next_data
+    idx, data = self._get_data()
+  File "/home/wdh/anaconda3/envs/yolov5/lib/python3.7/site-packages/torch/utils/data/dataloader.py", line 1325, in _get_data
+    success, data = self._try_get_data()
+  File "/home/wdh/anaconda3/envs/yolov5/lib/python3.7/site-packages/torch/utils/data/dataloader.py", line 1163, in _try_get_data
+    data = self._data_queue.get(timeout=timeout)
+  File "/home/wdh/anaconda3/envs/yolov5/lib/python3.7/multiprocessing/queues.py", line 104, in get
+    if not self._poll(timeout):
+  File "/home/wdh/anaconda3/envs/yolov5/lib/python3.7/multiprocessing/connection.py", line 257, in poll
+    return self._poll(timeout)
+  File "/home/wdh/anaconda3/envs/yolov5/lib/python3.7/multiprocessing/connection.py", line 414, in _poll
+    r = wait([self], timeout)
+  File "/home/wdh/anaconda3/envs/yolov5/lib/python3.7/multiprocessing/connection.py", line 921, in wait
+    ready = selector.select(timeout)
+  File "/home/wdh/anaconda3/envs/yolov5/lib/python3.7/selectors.py", line 415, in select
+    fd_event_list = self._selector.poll(timeout)
+KeyboardInterrupt
