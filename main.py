@@ -197,7 +197,7 @@ def train(args, epoch, model, scaler, amp_context, optimizer, schedule, train_lo
                         
                         feature = feature.squeeze(-1)
                         loss_function = [nn.CrossEntropyLoss().to(args.device),
-                         ECCLoss(args.num_classes, args.dim).to(args.device)]
+                         ECCLoss(args.num_classes, args.dim, device=args.device)]
                         loss1 = loss_function[0](outs[name], labels)
                         feature_center_loss, logit_center_loss, feature_table, logits_table = loss_function[1](feature, outs[name], labels)
                         loss_c = loss1 + args.lmd_1 * ratio * feature_center_loss + args.lmd_2 * ratio * logit_center_loss
