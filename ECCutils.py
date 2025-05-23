@@ -38,13 +38,13 @@ def js_div(logits, target_logit):
     return js_loss
 
 class ECCLoss(nn.Module):
-    def __init__(self, num_class, dim):
+    def __init__(self, num_class, dim, device='cuda:0'):
         super().__init__()
-        self.feature_table = torch.rand((num_class, dim), requires_grad=False).cuda()
-        self.count = torch.zeros((num_class, 1), requires_grad=False).cuda()
-        self.logit_table = torch.rand((num_class, num_class), requires_grad=False).cuda()
         self.num_class = num_class
         self.dim = dim
+        self.register_buffer('feature_table', torch.rand((num_class, dim), device=device))
+        self.register_buffer('count', torch.zeros((num_class, 1), device=device))
+        self.register_buffer('logit_table', torch.rand((num_class, num_class), device=device))
 
     def forward(self, feature, logits, targets):
         # feature_copy = feature.clone().detach()
