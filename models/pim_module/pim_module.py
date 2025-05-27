@@ -90,11 +90,12 @@ class GCNCombiner(nn.Module):
         hs = self.batch_norm1(hs)
         ### predict
         hs = self.param_pool1(hs)
+        ds = hs
         hs = self.dropout(hs)
         hs = hs.flatten(1)
         hs = self.classifier(hs)
 
-        return hs
+        return hs ,ds
 
 class WeaklySelector(nn.Module):
 
@@ -418,7 +419,7 @@ class PluginMoodel(nn.Module):
         if self.use_combiner:
             comb_outs = self.combiner(selects)
             logits['comb_outs'] = comb_outs
-            return logits
+            return logits, feature_outs
         
         if self.use_selection or self.fpn:
             return logits
