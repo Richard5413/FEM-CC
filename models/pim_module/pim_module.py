@@ -417,7 +417,7 @@ class PluginMoodel(nn.Module):
             selects = self.selector(x, logits)
 
         if self.use_combiner:
-            comb_outs = self.combiner(selects)
+            comb_outs ,feature_outs = self.combiner(selects)
             logits['comb_outs'] = comb_outs
             return logits, feature_outs
         
