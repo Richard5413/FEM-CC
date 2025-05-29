@@ -92,7 +92,7 @@ def build_resnet50(pretrained: str = "./resnet50_miil_21k.pth",
                                    use_selection = use_selection,
                                    num_classes = num_classes,
                                    num_selects = num_selects, 
-                                   use_combiner = num_selects,
+                                   use_combiner = use_combiner,
                                    comb_proj_size = comb_proj_size)
 
 
@@ -143,7 +143,7 @@ def build_efficientnet(pretrained: bool = True,
                                    use_selection = use_selection,
                                    num_classes = num_classes,
                                    num_selects = num_selects, 
-                                   use_combiner = num_selects,
+                                   use_combiner = use_combiner,
                                    comb_proj_size = comb_proj_size)
 
 
@@ -217,7 +217,7 @@ def build_vit16(pretrained: str = "./vit_base_patch16_224_miil_21k.pth",
                                    use_selection = use_selection,
                                    num_classes = num_classes,
                                    num_selects = num_selects, 
-                                   use_combiner = num_selects,
+                                   use_combiner = use_combiner,
                                    comb_proj_size = comb_proj_size)
 
 
@@ -267,7 +267,7 @@ def build_swintransformer(pretrained: bool = True,
                                    use_selection = use_selection,
                                    num_classes = num_classes,
                                    num_selects = num_selects, 
-                                   use_combiner = num_selects,
+                                   use_combiner = use_combiner,
                                    comb_proj_size = comb_proj_size)
 
 
