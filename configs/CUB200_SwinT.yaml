@@ -1,4 +1,4 @@
-project_name: CUB200-T2GCN
+project_name: CUB200-SwinT2GCN
 exp_name: T111F
 use_wandb: True
 wandb_entity: XXX
@@ -29,7 +29,7 @@ num_selects:
 use_combiner: True
 lambda_b: 0.5
 lambda_s: 0.0
-lambda_n: 5.0
+lambda_n: 3.0
 lambda_c: 1.0
 update_freq: 2
 log_freq: 100
