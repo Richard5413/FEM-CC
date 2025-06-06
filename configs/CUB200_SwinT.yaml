@@ -1,5 +1,5 @@
-project_name: CUB200-T2
-exp_name: T3000
+project_name: CUB200-T2GCN
+exp_name: T111F
 use_wandb: True
 wandb_entity: XXX
 # train_root: ../datas/train/
