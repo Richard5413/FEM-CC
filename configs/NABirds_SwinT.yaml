@@ -1,7 +1,7 @@
 project_name: NABirds-SWINT-FEMCC
 exp_name: T4GCN
 use_wandb: True
-wandb_entity: 2637607099-east-china-normal-university
+wandb_entity: xxxxxx
 # train_root: ../datas/train/
 train_root: /data1/wdh/FGVC_DataandModel/NABirds/train/
 # train_root: ~
