@@ -2,9 +2,9 @@
 Feature Enhancement Module Based on Class-Centric Loss for Fine-Grained Visual Classification
 
 # enviroment 
-pytorch
-scikit-learn
-wandb
+pytorch  
+scikit-learn  
+wandb  
 timm: https://github.com/huggingface/pytorch-image-models
 
 # Our pretrained model
