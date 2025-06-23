@@ -4,7 +4,9 @@ Feature Enhancement Module Based on Class-Centric Loss for Fine-Grained Visual C
 # enviroment 
 - pytorch  
 - scikit-learn  
-- wandb  
+- wandb
+- numpy
+- pandas
 - timm: https://github.com/huggingface/pytorch-image-models
 
 # Our pretrained model
