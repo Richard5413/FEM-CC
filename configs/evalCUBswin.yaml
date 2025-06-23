@@ -1,7 +1,7 @@
 project_name: CUB200-SWINT-T2
 exp_name: T4_Test
 use_wandb: True
-wandb_entity: 2637607099-east-china-normal-university
+wandb_entity: xxxxxxx
 train_root: ~
 # val_root: ../datas/test/
 val_root: /data1/wdh/FGVC_DataandModel/cub200_dataset/test/
