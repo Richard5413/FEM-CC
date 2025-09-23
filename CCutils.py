@@ -37,7 +37,7 @@ def js_div(logits, target_logit):
     js_loss = 0.5 * (kl_p + kl_q)
     return js_loss
 
-class ECCLoss(nn.Module):
+class CCLoss(nn.Module):
     def __init__(self, num_class, dim, device='cuda:0'):
         super().__init__()
         self.num_class = num_class
@@ -76,3 +76,4 @@ class ECCLoss(nn.Module):
         logit_center_loss = F.kl_div(F.log_softmax(logits, dim=1), F.softmax(target_logit, dim=1), reduction='sum')
 
         return feature_center_loss+feature_intra_loss, logit_center_loss, self.feature_table, self.logit_table
+
