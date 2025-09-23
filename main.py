@@ -11,7 +11,7 @@ from utils.costom_logger import timeLogger
 from utils.config_utils import load_yaml, build_record_folder, get_args
 from utils.lr_schedule import cosine_decay, adjust_lr, get_lr
 from eval import evaluate, cal_train_metrics
-from ECCutils import ECCLoss
+from CCutils import CCLoss
 
 warnings.simplefilter("ignore")
 
@@ -197,7 +197,7 @@ def train(args, epoch, model, scaler, amp_context, optimizer, schedule, train_lo
                         
                         feature = feature.squeeze(-1)
                         loss_function = [nn.CrossEntropyLoss().to(args.device),
-                         ECCLoss(args.num_classes, args.dim, device=args.device)]
+                         CCLoss(args.num_classes, args.dim, device=args.device)]
                         loss1 = loss_function[0](outs[name], labels)
                         feature_center_loss, logit_center_loss, feature_table, logits_table = loss_function[1](feature, outs[name], labels)
                         loss_c = loss1 + args.lmd_1 * ratio * feature_center_loss + args.lmd_2 * ratio * logit_center_loss
