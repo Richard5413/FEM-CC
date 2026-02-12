@@ -25,10 +25,10 @@ python main.py --c ./configs/evalCUBswin.yaml
   author={Wang, Daohui and Xinyu, He and Lyu, Shujing and Tian, Wei and Lu, Yue},
   journal={IEEE Transactions on Neural Networks and Learning Systems}, 
   title={Feature Enhancement Module Based on Class-Centric Loss for Fine-Grained Visual Classification}, 
-  year={2025},
-  volume={},
-  number={},
-  pages={1-14},
+  year={2026},
+  volume={37},
+  number={2},
+  pages={893-906},
   keywords={Transformers;Feature extraction;Visualization;Annotations;Accuracy;Automobiles;Overfitting;Finite element analysis;Computer architecture;Attention mechanisms;Class center;convolutional neural network (CNN);fine-grained visual classification (FGVC);soft label;Transformer},
-  doi={10.1109/TNNLS.2025.3613791}
-}
+  doi={10.1109/TNNLS.2025.3613791}}
+
